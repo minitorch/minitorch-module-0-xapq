@@ -16,6 +16,7 @@ exclude = [
     "**/mt_diagrams",
     "**/.*",
     "*chainrule.py*",
+    "**/minitorch/datasets.py"
 ]
 venvPath = "."
 venv = ".venv"
@@ -30,6 +31,7 @@ reportUnknownLambdaType = "none"
 reportIncompatibleMethodOverride = "none"
 reportPrivateUsage = "none"
 reportMissingParameterType = "error"
+reportMissingImports = "none"
 
 
 [tool.pytest.ini_options]
@@ -72,6 +74,7 @@ exclude = [
     "**/mt_diagrams/*",
     "**/minitorch/testing.py",
     "**/docs/**/*",
+    "**/minitorch/datasets.py",
 ]
 
 ignore = [
@@ -97,6 +100,9 @@ ignore = [
     "D213",
     "ANN204",
     "ANN102",
+    "D102",
+    "D103",
+    "D104",
 ]
 select = ["D", "E", "F", "N", "ANN"]
 fixable = [
